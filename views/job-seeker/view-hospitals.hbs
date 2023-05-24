@@ -1,0 +1,29 @@
+<link rel='stylesheet' href='/stylesheets/user.css' />
+<style>
+    body {
+        background: linear-gradient(90deg, #0cebeb, #20e3b2, #29ffc6);
+    }
+</style>
+
+<nav class="navbar navbar-light bg-light mb-5">
+    <h1 class="ms-3">hospitals</h1>
+</nav>
+
+<div class="container library">
+    <div class="row">
+        {{#each hospitals}}
+        <div class="col-4">
+            <div class="card p-2">
+                <img src="/images/hospital/{{_id}}.jpg" class="image">
+                <div class="container">
+                    <h4><b>{{hospitalName}}</b></h4>
+                    <h6>{{description}} </h6>
+                    <h6>{{place}}</h6>
+                    <h6><b>{{phone}}</b></h6>
+                    <h6><b>{{email}}</b></h6>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

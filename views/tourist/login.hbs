@@ -1,0 +1,24 @@
+<link rel='stylesheet' href='/stylesheets/user.css' />
+<style>
+    body {
+        background: linear-gradient(90deg, #F2994A, #F2C94C);
+        background-image: url(https://i.pinimg.com/originals/34/b3/32/34b3326c751cf5dd619416bd3cdb553b.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<div class="login-page">
+    <div class="form">
+        <div>
+            <h2 class="title" style="color: #F2994A;">Tourist Login</h2>
+        </div>
+        <form class="login-form" action="/tourist/login" method="post">
+            <input type="email" placeholder="Enter email" name="email" />
+            <input type="password" placeholder="Enter password" name="password" />
+            <button type="submit" style="background: linear-gradient(90deg, #F2994A, #F2C94C);">Login</button>
+            <p class="text-secondary mt-3">New User ? <a href="/tourist/signup" class="font-weight-bold"
+                    style="text-decoration: none;">Signup here</a></p>
+        </form>
+    </div>
+</div>

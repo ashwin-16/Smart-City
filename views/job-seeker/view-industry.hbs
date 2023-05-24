@@ -1,0 +1,29 @@
+<link rel='stylesheet' href='/stylesheets/user.css' />
+<style>
+    body {
+        background: linear-gradient(90deg, #b4e5e5, #6fab9c, #29ffc6);
+    }
+</style>
+
+<nav class="navbar navbar-light bg-light mb-5">
+    <h1 class="ms-3">Industries</h1>
+</nav>
+
+<div class="container library">
+    <div class="row">
+        {{#each industry}}
+        <div class="col-4">
+            <div class="card p-2">
+                <img src="/images/industry/{{_id}}.jpg" class="image">
+                <div class="container">
+                    <h4><b>{{industryName}}</b></h4>
+                    <h6>{{description}} </h6>
+                    <h6>{{place}}</h6>
+                    <h6>{{phone}}</h6>
+                    <h6>{{email}}</h6>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

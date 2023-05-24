@@ -1,0 +1,112 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right,#ffffff,#e8bc38);">
+    <div class="container-fluid">
+        <a class="navbar-brand text-dark h5" href="#" style="font-size: 33px;">Welcome {{tourist.username}}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark h6" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark h6" aria-current="page" href="/tourist/search-hospitals">Hospitals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark h6" aria-current="page" href="/tourist/search-hotels">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark h6" aria-current="page" href="/tourist/search-theaters">Theaters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark h6" aria-current="page" href="/tourist/search-libraries">Libraries</a>
+                </li>
+
+            </ul>
+            <form class="d-flex">
+                <a href="/tourist/logout"> <button class="btn btn-outline-dark" type="submit">Logout</button></a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+{{!-- carousel --}}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+    style="max-width: 100vw;max-height:85vh;overflow:hidden">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="object-fit: cover;width:100%;height:100%">
+            <img src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/93bea8ef802a988ed8ab44889dc82b83/6f640083-f7d0-4a55-aecb-ef7ed7da06e2_rw_1200.gif?h=b30b26467203c5e861f6e9b0ca00bfdf" class="d-block w-100 img-fluid" alt="">
+        </div>
+        <div class="carousel-item" style="object-fit: cover;width:100%;height:100%">
+            <img src="https://img.freepik.com/free-vector/trekkers-with-map-road-flat-color-vector-illustration-backpackers-planning-tour-boyfriend-girlfriend-searching-trail-route-2d-cartoon-characters-with-landscape-background_151150-6683.jpg?w=1060" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item" style="object-fit: cover;width:100%;height:100%">
+            <img src="https://www.kindpng.com/picc/m/633-6338043_shopping-clipart-couple-shopping-tourism-shopping-clipart-hd.png" class="d-block w-100" alt="">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{{!-- about us --}}
+
+<section id="about">
+    <div class="container d-flex flex-column justify-content-space-around" style="height: 70vh;">
+        <h2 class="title mt-5 mb-5" style="text-align: center;">
+            About Our City
+        </h2>
+        <p class="about-para">
+            Ernakulam is one of the most developed districts of Kerala covering an area of 3068 sqkm and based in the heartland of the state. It is the commercial capital of the state yielding the highest revenue among all districts in Kerala. Having its headquarters based at Kakkanad, it has the biggest metropolitan region, Cochin in its geographical limitations. Formed on 1st April,1958, the district is one of the most visited place and records the highest number of tourist visit in the state. Filled with churches and temples, museums and scenic beauty, historical places to cosmopolitan areas, shopping zones to movie theaters, the district has it all attracting tourists and facilitating the inhabitants of the district in the best way.
+           <br> <br>The district Ernakulam is the hub of Kerala, better known as ” God’s own country”, which makes it a perfect place to move around and enjoy the beauty and excellence of the land, One can visit and enjoy multiple number of entertaining places in Ernakulam and spend a great time here.
+<br><br>One of the best connected districts of the country, Ernakulam remains well facilitated with transportation services by air, rail, road and waterways. The district successfully establishes connection with most of the popular domestic and international destinations which also helps in promoting the growth and development of the place in multiple ways.
+
+        </p>
+    </div>
+</section>
+<section id="map" style="background: linear-gradient(to right,#e5e5e5,#c3a74d);">
+    <div class="container d-flex flex-column justify-content-space-around" style="height: 100vh;">
+        <h2 class="title mt-5 mb-5" style="text-align: center;">
+            Find Our City
+        </h2>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502964.51011673885!2d76.02072684606838!3d9.98293140660332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1650826551429!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;margin-left:20vw" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+</section>
+
+<footer class="bg-dark text-light d-flex flex-column justify-content-space-around" style="height: 30vh;">
+    <h2 class="title mt-5 mb-5" style="text-align: center;">
+        Contact us via
+    </h2>
+    <div class="icon-group d-flex justify-content-center">
+        <style>
+            i {
+                font-size: 30px;
+            }
+        </style>
+        <i class="fa-brands fa-twitter me-3"></i>
+        <i class="fa-brands fa-facebook me-3"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+</footer>

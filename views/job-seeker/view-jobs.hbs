@@ -1,0 +1,31 @@
+<link rel='stylesheet' href='/stylesheets/user.css' />
+<style>
+    body {
+        background: linear-gradient(90deg, #f2f4f4, #71827e, #626967);
+    }
+</style>
+
+<nav class="navbar navbar-light bg-light mb-5">
+    <h1 class="ms-3">Jobs</h1>
+</nav>
+
+<div class="container library">
+    <div class="row">
+        {{#each jobs}}
+        <div class="col-4">
+            <div class="card p-2">
+                <div class="container">
+                    <h4><b>{{jobName}}</b></h4>
+                    <h5>Company <b>{{companyName}}</b></h5>
+                    <h6>{{description}} </h6>
+                    <h6>{{place}}</h6>
+                    <h6>{{phone}}</h6>
+                    <h6>{{email}}</h6>
+                    <h6>Vacancies <b>{{vacancy}}</b></h6>
+                    <h6>Salary <b>₹{{salary}}</b></h6>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
