@@ -1,0 +1,126 @@
+<nav class="navbar navbar-expand-lg navbar-dark"
+    style="background: linear-gradient(to right,#cdced4, #87a2b1,#49769e);">
+    <div class="container-fluid">
+        <a class="navbar-brand  text-dark" href="#" style="font-size: 39px;"><b>Welcome</b> {{student.username}}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark " aria-current="page" href="/"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark " aria-current="page" href="#about"><b>About Us</b></a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link active text-dark " aria-current="page" href="https://www.google.co.in/maps/@9.4501272,76.537262,15z"><b>Map</b></a>
+                </li>
+                
+            </ul>
+            <div class="d-flex">
+                <a href="/login"><button class="btn btn-outline-light border-0 text-dark  "><b> Student</b></button></a>
+                <a href="/job-seeker/login"><button class="btn btn-outline-light border-0 text-dark  "><B>Job seeker</B></button></a>
+                <a href="/tourist/login"><button class="btn btn-outline-light border-0 text-dark "><b> Tourist</b></button></a>
+                <a href="/admin/login"><button class="btn btn-outline-light border-0 text-dark "><b>Admin</b></button></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+{{!-- carousel --}}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+    style="max-width: 100vw;max-height:85vh;overflow:hidden">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="object-fit: cover;width:100%;height:100%">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1244&q=80" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item" style="object-fit: cover;width:100%;height:100%">
+            <img src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item" style="object-fit: cover;width:100%;height:100%">
+            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80" class="d-block w-100" alt="">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{{!-- about us --}}
+
+<section id="about">
+    <div class="container d-flex flex-column justify-content-space-around" style="height: 70vh;">
+        <h2 class="title mt-5 mb-5" style="text-align: center;">
+            About Our City
+        </h2>
+        <p class="about-para">
+           A smart city uses information and communication technology (ICT) to improve operational efficiency, share information with the public and provide a better quality of government service and citizen welfare.
+
+The main goal of a smart city is to optimise city functions and promote economic growth while also improving the quality of life for citizens by using smart technologies and data analysis. The value lies in how this technology is used rather than simply how much technology is available.
+
+
+The success of a smart city relies on the relationship between the public and private sectors as much of the work to create and maintain a data-driven environment falls outside the local government remit. For example, smart surveillance cameras may need input and technology from several companies.
+
+Aside from the technology used by a smart city, there is also the need for data analysts to assess the information provided by the smart city systems so that any problems can be addressed and improvements found.
+<br>
+There are a number of definitions of what makes a city ‘smart,’ for example, IBM defines a smart city as “one that makes optimal use of all the interconnected information available today to better understand and control its operations and optimise the use of limited resources.”
+
+However, in short, a smart city uses a framework of information and communication technologies to create, deploy and promote development practices to address urban challenges and create a joined-up technologically-enabled and sustainable infrastructure.
+<br>
+Smart cities use a variety of software, user interfaces and communication networks alongside the Internet of Things (IoT) to deliver connected solutions for the public. Of these, the IoT is the most important. The IoT is a network of connected devices that communicate and exchange data. This can include anything from vehicles to home appliances and on-street sensors. Data collected from these devices is stored in the cloud or on servers to allow for improvements to be made to both public and private sector efficiencies and deliver economic benefits and improvements to the lives of citizens.
+
+Many of the IoT devices use edge computing, which ensures that only the most relevant and important data is delivered over the communication network. In addition, a security system is implemented to protect, monitor and control the transmission of data from the smart city network and prevent unauthorised access to the IoT network of city’s data platform.
+        </p>
+    </div>
+</section>
+
+
+
+
+<section id="map" style="background: linear-gradient(to right,#bfc1c7, #9fb2bc,#586ba0);">
+    <div class="container d-flex flex-column justify-content-space-around" style="height: 100vh;">
+        <h2 class="title mt-5 mb-5" style="text-align: center;">
+            Find Your City
+        </h2>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502964.51011673885!2d76.02072684606838!3d9.98293140660332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1650826551429!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;margin-left:20vw" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+</section>
+
+<footer class="bg-dark text-light d-flex flex-column justify-content-space-around" style="height: 30vh;">
+    <h2 class="title mt-5 mb-5" style="text-align: center;">
+        Contact us via
+    </h2>
+    <div class="icon-group d-flex justify-content-center">
+        <style>
+            i {
+                font-size: 30px;
+            }
+        </style>
+        <i class="fa-brands fa-twitter me-3"></i>
+        <i class="fa-brands fa-facebook me-3"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+</footer>
